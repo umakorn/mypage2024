@@ -1,41 +1,56 @@
-table {
-    border-collapse: collapse;
-    border: 0px solid #FCFFE0);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
-  
-  caption {
-    caption-side: bottom;
-    padding: 10px;
-    font-weight: bold;
-  }
-  
-  thead,
-  tfoot {
-    background-color: #FCFFE0;
-  }
-  
-  th,
-  td {
-    border: 1px solid #FCFFE0;
-    padding: 8px 10px;
-  }
-  
-  td:last-of-type {
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: pink;
+ }
+ 
+ .quiz-container {
     text-align: center;
-  }
-  
-  tbody > tr:nth-of-type(even) {
-    background-color: #FCFFE0;
-  }
-  
-  tfoot th {
-    text-align: right;
-  }
-  
-  tfoot td {
-    font-weight: bold;
-  }
-
+    box-shadow: 0 0 10px 10px rgba(50, 100, 100, .5);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 600px;
+    overflow: hidden;
+ }
+ #quiz-header{
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+ }
+ #quiz{
+    margin-left: 15px;
+ }
+ ul{
+    list-style: none;
+    padding-left: 10px;
+ }
+ ul li{
+    font-size: 1.1rem;
+    margin: 0;
+ }
+ ul li label{
+    cursor: pointer;
+ }
+ button {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+    padding: 10px;
+ }
+ 
